@@ -5,7 +5,7 @@ $(document).ready(function() {
     woeid: '',
     unit: 'f',
     success: function(weather) {
-      html =  '<div class="day"><p>'+weather.city+', '+weather.region+' - '+weather.updated+'</p>';
+      html =  '<div class="day first"><p>'+weather.city+', '+weather.region+' - '+weather.updated+'</p>';
       html += '<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
       html += '<h3>'+weather.text+'</h3>';
       html += '<ul><li class="high"> High: '+weather.high+'&deg;'+weather.units.temp+'</li>';
@@ -17,7 +17,7 @@ $(document).ready(function() {
       html += '<ul><li class="high"> High: '+weather.forecast[1].high+'&deg;'+weather.units.temp+'</li>';
       html += '<li class="low"> Low: '+weather.forecast[1].low+'&deg;'+weather.units.temp+'</li></ul></div>';
 
-      html +=  '<div class="day"><p>'+weather.forecast[2].day+', '+weather.forecast[2].date+'</p>';
+      html +=  '<div class="day last"><p>'+weather.forecast[2].day+', '+weather.forecast[2].date+'</p>';
       html += '<h2><i class="icon-'+weather.forecast[2].code+'"></i></h2>';
       html += '<h3>'+weather.forecast[2].text+'</h3>';
       html += '<ul><li class="high"> High: '+weather.forecast[2].high+'&deg;'+weather.units.temp+'</li>';
