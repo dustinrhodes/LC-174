@@ -33,7 +33,7 @@ body {
 }
 
 #weather {
-  width: 500px;
+  width: 100%;
   margin: 0px auto;
   text-align: center;
   text-transform: uppercase;
@@ -100,9 +100,18 @@ i {
 .icon-47:before { content: "S"; }
 
 #weather h2 {
-  margin: 0 0 8px;
+  margin: 0;
   color: #fff;
   font-size: 100px;
+  font-weight: 300;
+  text-align: center;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+#weather h3 {
+  margin: 0 0 8px;
+  color: #fff;
+  font-size: 20px;
   font-weight: 300;
   text-align: center;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
@@ -120,4 +129,9 @@ i {
   display: inline-block;
   border-radius: 5px;
   margin-left: 20px;
+}
+
+.day {
+  float: left;
+  margin-left: 5%;
 }
