@@ -9,7 +9,10 @@ $(document).ready(function() {
       html += '<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
       html += '<h3>'+weather.text+'</h3>';
       html += '<ul><li class="high"> High: '+weather.high+'&deg;'+weather.units.temp+'</li>';
-      html += '<li class="low"> Low: '+weather.low+'&deg;'+weather.units.temp+'</li></ul></div>';
+      html += '<li class="low"> Low: '+weather.low+'&deg;'+weather.units.temp+'</li></ul>';
+      html += '<p>Wind Chill: '+weather.wind.chill+'&deg;'+weather.units.temp+' - Heat Index: '+weather.heatindex+'&deg;'+weather.units.temp+'</p>';
+      html += '<p>Wind: '+weather.wind.speed+ ' mph ' +weather.wind.direction+'</p>';
+      html += '<p>Humidity: '+weather.humidity+'% Barometric Pressure: '+weather.pressure+' in </p>';
 
       html +=  '<div class="day"><p>'+weather.forecast[1].day+', '+weather.forecast[1].date+'</p>';
       html += '<h2><i class="icon-'+weather.forecast[1].code+'"></i></h2>';

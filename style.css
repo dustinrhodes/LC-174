@@ -36,14 +36,12 @@ html {
 
 body {
   padding: 45px 0;
-  /*font: 13px 'Open Sans', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;*/
   font-family: 'Varela', sans-serif;
   font-size: 13px;
 }
 
 #weather {
-  width: 990px;
-  margin: 0px auto;
+  width: 100%;
   text-align: center;
   text-transform: uppercase;
 }
@@ -142,16 +140,5 @@ i {
 
 .day {
   float: left;
-  margin-left: 30px;
-  padding-right: 30px;
-  border-right: 1px white solid;
-}
-
-.day.first {
-  margin-left: 0;
-}
-
-.day.last {
-  padding-right: 0;
-  border-right: none;
+  width: 380;
 }
